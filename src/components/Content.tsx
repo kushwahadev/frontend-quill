@@ -4,6 +4,8 @@ import { ButtonsCard } from "@/components/ui/tailwindcss-buttons";
 import { cn } from "@/utils/cn";
 import Image from "next/image";
 import List from "./List";
+import Link from "next/link";
+import Footer from "./Footer";
 
 function Content() {
   return (
@@ -119,6 +121,131 @@ function Content() {
         </h1>
       </div>
       <List />
+      <div className="grid justify-items-center mt-8 -ml-48 relative">
+        <h1 className=" mt-8 font-bold text-xl w-2/5">
+          QuillAudits' Strategic Approach to CDP Security Audits
+        </h1>
+        <p className="w-2/5  text-sm mt-8">
+          We prioritize threat modeling based on platform-specific risks.
+          Security-first, we identify and mitigate vulnerabilities beyond
+          functionality testing. Using white-box and black-box tests, we conduct
+          thorough vulnerability assessments. Maintaining transparency, we
+          communicate openly with the CDP team. Emphasizing clarity, we present
+          actionable insights for efficient issue resolution.
+        </p>
+        <h1 className=" mt-8 font-bold text-xl w-2/5">
+          Comprehensive Audit Discoveries and Remediation Strategies
+        </h1>
+        <p className="w-2/5 text-sm mt-8">
+          Throughout the audit process, we unearthed a total of 33 issues,
+          spanning from minor concerns to critical vulnerabilities. Among these,
+          some of the critical issues identified were: Here's how we remediated
+          them :
+        </p>
+
+        <h1 className=" mt-8 font-bold text-lg w-2/5">
+          1. Unauthorized Claim/Compound:
+        </h1>
+        <p className="w-2/5 ml-8 text-sm mt-8">
+          <span className="font-curse">a. </span> Users could claim/compound a
+          substantial amount without making a deposit or waiting for the
+          stipulated time.
+        </p>
+        <h1 className=" mt-8 font-bold text-lg w-2/5">
+          2. Precision Loss in mintCDP():
+        </h1>
+        <p className="w-2/5 ml-8 text-sm mt-8">
+          <span className="font-curse">a. </span> Precision loss and unscaled
+          values were identified while calculating rewardPerShare in the
+          mintCDP() function.
+        </p>
+        <h1 className=" mt-8 font-bold text-lg w-2/5">
+          3. Multiplication Accuracy:
+        </h1>
+        <p className="w-2/5 ml-8 text-sm mt-8">
+          <span className="font-curse">a. </span> Multiplication operations were
+          prone to providing incorrect answers due to unscaled values, posing a
+          potential risk to accurate calculations.
+        </p>
+        <h1 className=" mt-8 font-bold text-lg w-2/5">
+          4. Incorrect Share Allocation:
+        </h1>
+        <p className="w-2/5 ml-8 text-sm mt-8">
+          <span className="font-curse">a. </span> The protocol was allocating
+          shares for all days, even when there were no corresponding deposits,
+          leading to inefficient use of resources.
+        </p>
+        <h1 className=" mt-8 font-bold text-lg w-2/5">
+          5. Logic Error in Referral Handling :
+        </h1>
+        <p className="w-2/5 ml-8 text-sm mt-8">
+          <span className="font-curse">a. </span> A logic error resulted in
+          users always having their user.referral set to address(0), which could
+          be exploited to trick the referral system
+        </p>
+        <h1 className=" mt-8 font-bold text-lg w-2/5">
+          6. Referral Explanation:
+        </h1>
+        <p className="w-2/5 ml-8 text-sm mt-8">
+          <span className="font-curse">a. </span> Users could exploit the
+          referral system to extract more CDP from the protocol, undermining its
+          integrity.
+        </p>
+
+        <h1 className=" mt-8 font-bold text-xl w-2/5">Remediation & Impact</h1>
+        <p className="w-2/5 text-sm mt-8">
+          All identified vulnerabilities were addressed by the CDP team,
+          significantly enhancing the smart contract's security posture. Key
+          improvements include
+        </p>
+
+        <ol className=" grid gap-4 list-disc w-2/5 mt-8 text-sm ml-20">
+          <li>Implementation of reentrancy protection mechanisms.</li>
+          <li>
+            Accurate handling of decimal values using established libraries or
+            best practices.
+          </li>
+          <li>Revised calculations with proper scaling factors</li>
+          <li>
+            Fixing logic errors to ensure deposits and waiting periods are
+            enforced.
+          </li>
+          <li>Addressing referral system vulnerabilities to prevent abuse.</li>
+        </ol>
+        <h1 className=" w-2/5 mt-8">
+          Embeded this tweet:-
+          <Link
+            href={`https://x.com/CarpeDiemCDP/status/1742906560794296402?s=20`}
+            className="text-blue-500"
+          >
+            {" "}
+            https://x.com/CarpeDiemCDP/status/1742906560794296402?s=20{" "}
+          </Link>
+        </h1>
+
+        <p className="mt-10 w-2/5 text-xs">
+          CDP smart contract audit revealed and fixed critical vulnerabilities,
+          safeguarding funds and ensuring platform stability. This underscores
+          the need for proactive security in blockchain projects, crucial for
+          financial asset management. Through audits and issue resolution, CDP
+          reinforces platform security, bolstering user trust.
+        </p>
+        <Image
+          src={`/bluebox/tweet.jpg`}
+          alt="tweet"
+          width={600}
+          height={500}
+          className="mt-16 -ml-12"
+        />
+        <Image
+          src={`/bluebox/nws.jpg`}
+          alt="tweet"
+          width={1500}
+          height={200}
+          className="mt-16 "
+        />
+      </div>
+      <Footer />
     </div>
   );
 }
