@@ -117,8 +117,8 @@ function Content() {
         <h1 className="mt-8 -ml-24 font-bold text-xl w-1/3">
           CarpeDiem Pension's Journey Through our Audit Process
         </h1>
-        <List />
       </div>
+      <List />
     </div>
   );
 }
