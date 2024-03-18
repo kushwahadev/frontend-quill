@@ -94,19 +94,53 @@ function Footer() {
             <li>Explore All Tools</li>
           </ul>
         </div>
-        <div>
+        <div className="cursor-pointer">
           {" "}
           <h2 className=" underline underline-offset-8 decoration-sky-400 decoration-2">
             Other Services
           </h2>
+          <ul className="grid gap-3 font-medium text-xs mt-4 p-4">
+            <li>Red teaming</li>
+            <li>dApp</li>
+            <li>DeFi Diligence</li>
+            <li>NFT Due Diligence</li>
+            <li>Rug Pull Due diligence</li>
+            <li>BlockChain Forencis</li>
+            <li>KYC (Know Your Customer)</li>
+          </ul>
         </div>
-        <div>
+        <div className="cursor-pointer">
           {" "}
           <h2 className=" underline underline-offset-8 decoration-sky-400 decoration-2">
             Quill Links
           </h2>
+          <ul className="grid gap-3 font-medium text-xs mt-4 p-4">
+            <li>Pricing</li>
+            <li>Audit Process</li>
+            <li>Our Audits</li>
+            <li>Testimonials</li>
+            <li>Security Sypnosis</li>
+            <li>Blog</li>
+            <li>Clients</li>
+            <li className=" ">
+              Carrers{" "}
+              <span className=" rounded-lg ml-2 h-6 p-2 bg-sky-500 text-white">
+                Hiring
+              </span>
+            </li>
+          </ul>
         </div>
       </div>
+      <div className="grid justify-end">
+        <Image
+          src={`/bluebox/programs.png`}
+          alt="programs"
+          width={700}
+          height={600}
+          className="-mt-40 mr-24"
+        />
+      </div>
+      <hr className="bg-gray-600 mx-16 mt-0 " />
     </div>
   );
 }
