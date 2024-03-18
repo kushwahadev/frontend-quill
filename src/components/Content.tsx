@@ -3,6 +3,7 @@ import React from "react";
 import { ButtonsCard } from "@/components/ui/tailwindcss-buttons";
 import { cn } from "@/utils/cn";
 import Image from "next/image";
+import List from "./List";
 
 function Content() {
   return (
@@ -116,6 +117,7 @@ function Content() {
         <h1 className="mt-8 -ml-24 font-bold text-xl w-1/3">
           CarpeDiem Pension's Journey Through our Audit Process
         </h1>
+        <List />
       </div>
     </div>
   );
