@@ -141,6 +141,12 @@ function Footer() {
         />
       </div>
       <hr className="bg-gray-600 mx-16 mt-0 " />
+      <div className="grid grid-cols-12 mt-6">
+        <h6 className=" col-span-10 text-xs ml-16">
+          All Rights Reserved &copy;Copyright 2023. QuillAudits-LLC
+        </h6>
+        <h6 className=" col-span-2 text-xs -mr-auto">Privacy Policy</h6>
+      </div>
     </div>
   );
 }
