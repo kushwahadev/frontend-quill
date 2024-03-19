@@ -21,7 +21,7 @@ function Content() {
           </p>
           <p className="p-4 text-xs">
             Vulnerabilities could allow users to mint CDP tokens or pension
-            shares indefinitely, disrupting the system's economic balance
+            shares indefinitely, disrupting the system &apos;s economic balance
           </p>
         </div>
         <div className="w-80 p-4">
@@ -71,7 +71,7 @@ function Content() {
           "
         />
         <h1 className="mt-2 font-bold text-xl -ml-10 w-96">
-          CarpeDiem Pension's Flexible, Blockchain-Enabled Future
+          CarpeDiem Pension&apos;s Flexible, Blockchain-Enabled Future
         </h1>
       </div>
       <div className="grid justify-items-center mt-8 -ml-48">
@@ -96,8 +96,8 @@ function Content() {
           className="mt-8"
         />
         <h1 className="mt-8 font-bold text-xl w-2/5">
-          CarpeDiem Pension's Challenges: Enhancing Security Against Reentrancy,
-          Front-Running, and Infinite Minting
+          CarpeDiem Pension&apos;s Challenges: Enhancing Security Against
+          Reentrancy, Front-Running, and Infinite Minting
         </h1>
         <p className="w-2/5 text-sm mt-10">
           CarpeDiem Pension confronts critical security challenges, including
@@ -117,13 +117,13 @@ function Content() {
           className="mt-8 -ml-10"
         />
         <h1 className="mt-8 -ml-24 font-bold text-xl w-1/3">
-          CarpeDiem Pension's Journey Through our Audit Process
+          CarpeDiem Pension&apos;s Journey Through our Audit Process
         </h1>
       </div>
       <List />
       <div className="grid justify-items-center mt-8 -ml-48 relative">
         <h1 className=" mt-8 font-bold text-xl w-2/5">
-          QuillAudits' Strategic Approach to CDP Security Audits
+          QuillAudits&apos; Strategic Approach to CDP Security Audits
         </h1>
         <p className="w-2/5  text-sm mt-8">
           We prioritize threat modeling based on platform-specific risks.
@@ -139,8 +139,8 @@ function Content() {
         <p className="w-2/5 text-sm mt-8">
           Throughout the audit process, we unearthed a total of 33 issues,
           spanning from minor concerns to critical vulnerabilities. Among these,
-          some of the critical issues identified were: Here's how we remediated
-          them :
+          some of the critical issues identified were: Here&apos;s how we
+          remediated them :
         </p>
 
         <h1 className=" mt-8 font-bold text-lg w-2/5">
@@ -195,8 +195,8 @@ function Content() {
         <h1 className=" mt-8 font-bold text-xl w-2/5">Remediation & Impact</h1>
         <p className="w-2/5 text-sm mt-8">
           All identified vulnerabilities were addressed by the CDP team,
-          significantly enhancing the smart contract's security posture. Key
-          improvements include
+          significantly enhancing the smart contract&apos;s security posture.
+          Key improvements include
         </p>
 
         <ol className=" grid gap-4 list-disc w-2/5 mt-8 text-sm ml-20">

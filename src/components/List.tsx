@@ -11,8 +11,8 @@ function List() {
           whitepaper, technical specifications, and design documents.
         </li>
         <li className="text-sm m-4">
-          Obtained a clear understanding of the CDP platform's functionality,
-          economic model, and intended user interactions.
+          Obtained a clear understanding of the CDP platform&apos;s
+          functionality, economic model, and intended user interactions.
         </li>
         <li className="text-sm m-4">
           Discussed client concerns and specific areas of focus for the audit.
